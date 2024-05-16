@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+#inputArea {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 400px; /* Aanpasbaar naar behoefte */
+    margin: 20px auto;
+}
+
+#inputArea div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Zorgt ervoor dat padding niet de totale breedte beïnvloedt */
+}
+
+textarea {
+    height: 100px; /* Hoogte van het textarea */
+    resize: vertical; /* Staat de gebruiker toe om het textarea verticaal te schalen (optioneel) */
+}
+
+button {
+    background-color: #007bff; /* Blauwe achtergrondkleur */
+    color: white; /* Witte tekst */
+    padding: 10px 20px; /* Verticale en horizontale padding */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    cursor: pointer; /* Cursor verandert in een handje bij hover */
+    font-size: 16px; /* Tekstgrootte */
+    transition: background-color 0.3s; /* Animatie voor hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Donkerdere blauwe kleur bij hover */
+}
+
+.panel {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.panel label {
+    margin: 5px 0;
+}
+
+.panel button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.panel button:hover {
+    background-color: #cc0000;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-input-container {
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* Specifieke stijlen voor de dropdown */
+select {
+    display: block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #444;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.low-button-div {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 50px;
+}
