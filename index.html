@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NPO Visuals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 style="text-align: center" id="npo">NPO Visuals</h1>
+<form id="articleForm" action="/submit-article" method="POST">
+    <div id="inputArea">
+        <div>
+            <label for="article-title">Article Title</label>
+            <input name="article-title" id="article-title" type="text" placeholder="Enter the headline of your article">
+        </div>
+        <div>
+            <label for="title-description">Brief Description</label>
+            <textarea name="title-description" id="title-description"
+                      placeholder="Summarize your article in a few sentences"></textarea>
+        </div>
+
+        <div>
+            <label for="article-url">Article Link</label>
+            <input name="article-url" id="article-url" type="text" placeholder="https://example.com/your-article">
+        </div>
+
+        <div>
+            <label for="article-platform">Broadcasting Organization</label>
+            <select name="article-platform" id="article-platform">
+                <option disabled selected>--Kies het platform van dit artikel--</option>
+                <option value="NOS">NOS</option>
+                <option value="BNNVARA">BNNVARA</option>
+                <option value="FunX">FunX</option>
+            </select>
+
+        </div>
+
+        <div class="tag-container">
+            <div class="tag-input-container">
+                <label for="tag1">Tag 1</label>
+                <input type="text" id="tag1" name="tag1" placeholder="Enter tag 1">
+            </div>
+            <div class="tag-input-container">
+                <label for="tag2">Tag 2</label>
+                <input type="text" id="tag2" name="tag2" placeholder="Enter tag 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="low-button-div">
+        <button style="background-color: #4CAF50" type="button" id="addPanelButton">Add Panel +</button>
+        <button type="submit" id="showExampleButton">Show Example</button>
+    </div>
+
+</form>
+
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

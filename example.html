@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NPO Visuals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 style="text-align: center" id="npo">NPO Visuals</h1>
+<form id="articleForm" action="/send-article" method="POST">
+    <div id="inputArea">
+        <div>
+            <label for="article-title-example">Article Title:</label>
+            <div id="article-title-example" class="input-replacement">[Article Title Here]</div>
+        </div>
+        <div>
+            <label for="title-description-example">Brief Description:</label>
+            <div id="title-description-example" class="input-replacement">[Brief Description Here]</div>
+        </div>
+
+        <div>
+            <label for="article-url-example">Article Link:</label>
+            <div id="article-url-example" class="input-replacement">[https://example.com/your-article]</div>
+        </div>
+
+        <div>
+            <label for="article-platform-example">Article Link:</label>
+            <div id="article-platform-example" class="input-replacement">[https://example.com/your-article]</div>
+        </div>
+
+        <div class="tag-container">
+            <div class="tag-input-container">
+                <label for="tag1-example">Tag 1:</label>
+                <div id="tag1-example" class="input-replacement">[Tag 1 Here]</div>
+            </div>
+            <div class="tag-input-container">
+                <label for="tag2-example">Tag 2:</label>
+                <div id="tag2-example" class="input-replacement">[Tag 2 Here]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="low-button-div">
+        <button type="button" id="previousPageButton">Previous</button>
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/example.js"></script>
+</body>
+</html>
